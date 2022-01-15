@@ -70,14 +70,13 @@ body{
   color: whitesmoke;
   text-decoration: none;
   background: #b10d5a;
-  font-weight: 700;
-  padding: 15px 36px;
+  font-weight: 200;
+  padding: 10px;
   border-radius: 30px;
 }
 
 .first-pic{
   width: 50%;
-  margin-left: 150px;
 }
 .camera{
   width: 440px;
@@ -180,16 +179,25 @@ footer  p{
 .social-icon:hover{
   color: #333333;
 }
-/* Media querry */
+
+/* Media querry for mobile*/
+
 @media screen and (max-width:688px ) {
   .container{
       margin: 20px;
   }
-  .navbar{
-      flex-direction: column-reverse;
+  .first-section{
+      display: grid;
+      grid-template-columns: 1fr;
   }
-  .first-details{
-      width: 100%;
+  .first-pic{
+    margin-top: 10px;
+  }
+  .first-pic img{
+    margin-left: 0px;
+  }
+  .camera{
+    width: 300px;
   }
   .information{
       grid-template-columns: repeat(1 ,1fr);
@@ -198,8 +206,8 @@ footer  p{
       display: none;
   }
   .name{
-      text-align: center;
-      font-size: 16px;
+      font-size: 20px;
+      justify-content: center;
   }
   .navbar{
       background: none;
@@ -209,13 +217,23 @@ footer  p{
   }
   .extra-section{
     width: 100%;
-    margin: 0px;
+    margin: 20px;
   }
   .extra-section h1{
-    font-size: 10px;
-    color: #FF6363;
+    display: none;
   }
   .extra-section a{
     margin: 30px;
+  }
+  .extra-section img{
+    width: 250px;
+    height: 250px;
+  }
+  button{
+    border: none;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 270px;
+    color:#FF6363;
   }
 }
